@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Spanish Trainer</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #1a1a2e;
+      background: #f8f9fc;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+      color: #fff;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+
+    header .flag { font-size: 2.5rem; margin-bottom: 12px; }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 6px;
+    }
+
+    header p {
+      font-size: 0.95rem;
+      opacity: 0.75;
+    }
+
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    .intro-box {
+      background: #fff;
+      border-left: 4px solid #0f3460;
+      border-radius: 6px;
+      padding: 20px 24px;
+      margin-bottom: 40px;
+      font-size: 0.95rem;
+      color: #444;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+
+    section {
+      background: #fff;
+      border-radius: 8px;
+      padding: 28px 32px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+
+    section h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #0f3460;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #e8eaf0;
+    }
+
+    p { margin-bottom: 12px; color: #333; }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      margin: 10px 0 12px 0;
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 6px;
+      color: #333;
+    }
+
+    .highlight {
+      background: #eef6ff;
+      border-radius: 4px;
+      padding: 12px 16px;
+      margin: 14px 0;
+      font-size: 0.93rem;
+      color: #1a4a7a;
+      border: 1px solid #c5ddf7;
+    }
+
+    a { color: #0f3460; }
+    a:hover { text-decoration: underline; }
+
+    .contact-box {
+      background: #0f3460;
+      color: #fff;
+      border-radius: 8px;
+      padding: 28px 32px;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .contact-box h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .contact-box a {
+      color: #7ec8e3;
+      font-size: 1.05rem;
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.82rem;
+      color: #888;
+      padding: 0 24px 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="flag">🇪🇸</div>
+  <h1>Spanish Trainer — Privacy Policy</h1>
+  <p>Effective date: March 24, 2026 &nbsp;·&nbsp; Developer: Dylan Mace</p>
+</header>
+
+<main>
+
+  <div class="intro-box">
+    This Privacy Policy describes how <strong>Spanish Trainer</strong> (bundle ID:
+    <code>com.dylanmace.spanish-trainer</code>) handles your information. Spanish Trainer is
+    a personal vocabulary-learning app that uses spaced repetition to help you study Spanish
+    with materials from your own tutor sessions.
+  </div>
+
+  <!-- 1. Overview -->
+  <section>
+    <h2>1. Overview</h2>
+    <p>
+      Spanish Trainer is designed with privacy as a default. The app has <strong>no backend
+      server of its own</strong>. All vocabulary data, study progress, and settings are stored
+      locally on your device. The only outbound network requests are to third-party services
+      you explicitly authorize, described below.
+    </p>
+  </section>
+
+  <!-- 2. Data We Collect -->
+  <section>
+    <h2>2. Information Collected and How It Is Used</h2>
+
+    <p><strong>Gmail (read-only access)</strong></p>
+    <p>
+      With your permission, Spanish Trainer connects to your Gmail account using Google OAuth
+      with the <code>gmail.readonly</code> scope. This access is used solely to import
+      vocabulary materials your language tutor has sent you. The app reads email content
+      on-device; that content is never transmitted to any server operated by the developer.
+    </p>
+    <div class="highlight">
+      Gmail data is read locally. It is not sold, shared, or uploaded to any developer-controlled server.
+    </div>
+
+    <p><strong>Vocabulary and study data</strong></p>
+    <p>
+      Words, definitions, example sentences, study history, and spaced-repetition scheduling
+      data are stored in a local SQLite database on your device. This data never leaves your
+      device except as described under Third-Party Services below.
+    </p>
+
+    <p><strong>Microphone</strong></p>
+    <p>
+      The app requests microphone access to support speech-recognition practice exercises.
+      Audio captured during these exercises is processed on-device using the operating
+      system's built-in speech framework. <strong>Audio is not recorded, stored, or
+      transmitted</strong> by the app.
+    </p>
+
+    <p><strong>API credentials</strong></p>
+    <p>
+      Any API keys you enter (e.g., your Anthropic API key) are stored in the device's
+      secure keychain via <code>expo-secure-store</code> and are never transmitted outside
+      of the authorized API calls described below.
+    </p>
+  </section>
+
+  <!-- 3. Third-Party Services -->
+  <section>
+    <h2>3. Third-Party Services</h2>
+
+    <p>Spanish Trainer uses the following third-party services. Each service's own privacy
+    policy governs how they handle data sent to them.</p>
+
+    <p><strong>Google OAuth / Gmail API</strong></p>
+    <p>
+      Used to authenticate your Google account and read tutor emails. Google's use of your
+      data is governed by the
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.
+      You can revoke Spanish Trainer's Gmail access at any time via
+      <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Account Permissions</a>.
+    </p>
+
+    <p><strong>Anthropic Claude API</strong></p>
+    <p>
+      To classify and organize vocabulary content extracted from your tutor emails, the app
+      sends text snippets to the Anthropic Claude API. Only the relevant text (vocabulary
+      words and surrounding context) is sent — no personal identifiers, email metadata, or
+      contact information are included in these requests. Anthropic's use of this data is
+      governed by the
+      <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">Anthropic Privacy Policy</a>.
+    </p>
+
+    <div class="highlight">
+      No advertising networks, analytics SDKs, or data brokers are used in this app.
+    </div>
+  </section>
+
+  <!-- 4. Data Storage and Security -->
+  <section>
+    <h2>4. Data Storage and Security</h2>
+    <ul>
+      <li><strong>Local SQLite database</strong> — vocabulary, definitions, and study progress stored on-device.</li>
+      <li><strong>Secure keychain (expo-secure-store)</strong> — API keys and OAuth tokens stored in the iOS/Android secure enclave-backed keychain.</li>
+      <li><strong>No developer-operated cloud storage</strong> — the developer does not operate any database, cloud storage bucket, or logging service that receives your data.</li>
+    </ul>
+    <p>
+      While the app implements reasonable security measures, no method of electronic storage
+      is 100% secure. If you believe your data has been compromised, please contact us
+      immediately at the address below.
+    </p>
+  </section>
+
+  <!-- 5. Data Sharing -->
+  <section>
+    <h2>5. Data Sharing and Disclosure</h2>
+    <p>
+      We do not sell, trade, rent, or otherwise transfer your personal information to third
+      parties. The only data that leaves your device are the API calls described in Section 3,
+      which are necessary to provide the app's core functionality and are made at your
+      direction.
+    </p>
+    <p>
+      We may disclose information if required by law or to protect the rights, property, or
+      safety of users or others, but given that no user data is stored on developer servers,
+      such disclosure would be limited to information already on your own device.
+    </p>
+  </section>
+
+  <!-- 6. Children's Privacy -->
+  <section>
+    <h2>6. Children's Privacy</h2>
+    <p>
+      Spanish Trainer is not directed at children under the age of 13. We do not knowingly
+      collect personal information from children under 13. If you are a parent or guardian
+      and believe your child has provided personal information through the app, please contact
+      us and we will take steps to delete such information.
+    </p>
+  </section>
+
+  <!-- 7. Your Rights and Choices -->
+  <section>
+    <h2>7. Your Rights and Choices</h2>
+    <ul>
+      <li><strong>Access and deletion</strong> — All your study data lives on your device. You can delete the app at any time to remove all locally stored data.</li>
+      <li><strong>Revoke Gmail access</strong> — Visit <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Account Permissions</a> to revoke access at any time.</li>
+      <li><strong>Microphone access</strong> — You can disable microphone access in your device's system settings at any time; this will disable speech-practice features.</li>
+      <li><strong>API key removal</strong> — You can remove your Anthropic API key from within the app settings; this will disable AI classification features.</li>
+    </ul>
+  </section>
+
+  <!-- 8. Changes to This Policy -->
+  <section>
+    <h2>8. Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. When we do, we will revise the
+      effective date at the top of this page. For significant changes, we will provide a
+      more prominent notice (such as an in-app notification). We encourage you to review
+      this policy periodically.
+    </p>
+    <p>
+      Continued use of Spanish Trainer after changes to this policy constitutes your
+      acceptance of the updated terms.
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <div class="contact-box">
+    <h2>Questions or Concerns?</h2>
+    <p style="color: rgba(255,255,255,0.8); margin-bottom: 12px;">
+      If you have any questions about this Privacy Policy or the data practices described
+      here, please reach out.
+    </p>
+    <a href="mailto:dylan@dylanmace.com">dylan@dylanmace.com</a>
+  </div>
+
+</main>
+
+<footer>
+  <p>Spanish Trainer &nbsp;·&nbsp; Bundle ID: com.dylanmace.spanish-trainer &nbsp;·&nbsp; Developer: Dylan Mace</p>
+  <p style="margin-top:4px;">Last updated: March 24, 2026</p>
+</footer>
+
+</body>
+</html>
